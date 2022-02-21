@@ -11,6 +11,7 @@ public class BlueEnemy : Enemy
     }
     protected override void Move(float speed)
     {
+        //Polymorphism
         base.Move(speed);
         transform.Translate(Vector3.up * (transform.position.y - player.transform.position.y) * speed * Time.deltaTime);
     }

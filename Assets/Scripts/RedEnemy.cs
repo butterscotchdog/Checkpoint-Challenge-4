@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class RedEnemy : Enemy
 {
+   
     void Update()
     {
+        //Inheritance
         Move(-5);
     }
 }

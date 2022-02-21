@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    //Encapsulation
     public bool isGameActive { get; private set; }
     [SerializeField] private GameObject gameOver;
     private void Start()
@@ -13,6 +14,7 @@ public class GameManager : MonoBehaviour
         gameOver.SetActive(false);
     }
 
+    //Abstraction
     public void EndGame()
     {
         isGameActive = false;
