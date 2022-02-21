@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public bool isGameActive;
+    public bool isGameActive { get; private set; }
     [SerializeField] private GameObject gameOver;
     private void Start()
     {
